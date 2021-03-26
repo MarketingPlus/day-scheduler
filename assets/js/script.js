@@ -28,4 +28,12 @@ function colorChange() {
     })
 };
 
+// ================================= SAVE ====================================
+saveBtn.on("click", function() {
+    var time = $(this).siblings(".hour").text();
+    var input = $(this).siblings(".input").val();
+
+    localStorage.setItem(time, input);
+});
+
 colorChange()
