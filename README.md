@@ -83,6 +83,6 @@ $(".time-block").each(function() {
 
 ## LINKS 🔗
 
-[REPOSITARY](https://github.com/MarketingPlus/coding-quiz)
+[REPOSITARY](https://github.com/MarketingPlus/day-scheduler/)
 
-[WEBSITE](https://marketingplus.github.io/coding-quiz/)
+[WEBSITE](https://marketingplus.github.io/day-scheduler/)
