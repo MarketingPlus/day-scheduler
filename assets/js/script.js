@@ -13,7 +13,7 @@ $('#currentDay').text(currentDay);
 function colorChange() {
     var hour = moment().hours();
 
-    $(".time").each(function() {
+    $(".time-block").each(function() {
         var currentHour = parseInt($(this).attr("id"));
 
         // console.log(this)
@@ -29,6 +29,7 @@ function colorChange() {
 };
 
 // ================================= SAVE ====================================
+// saves the information to local storage
 saveBtn.on("click", function() {
     var time = $(this).siblings(".hour").text();
     var input = $(this).siblings(".input").val();
@@ -36,4 +37,7 @@ saveBtn.on("click", function() {
     localStorage.setItem(time, input);
 });
 
-colorChange()
+
+
+// ========================= CALL FUNCTIONS ==================================
+colorChange();
