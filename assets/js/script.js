@@ -53,8 +53,16 @@ function savePlanner() {
 
 // ======================= DELETING SAVED PLANNER ============================
 
+// added a end of day even at 8pm it deletes the local storage so the website is fresh
+function deletePlanner() {
+    endDay = moment().hours()
 
+    if(endDay >= 20) {
+        window.localStorage.clear(); 
+    }
+}; 
 
 // ========================= CALL FUNCTIONS ==================================
 colorChange();
 savePlanner();
+deletePlanner();
