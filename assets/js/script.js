@@ -38,6 +38,23 @@ saveBtn.on("click", function() {
 });
 
 
+// save content even when refreshing
+function savePlanner() {
+    $(".hour").each(function() {
+        var currentHour = $(this).text();
+        var currentInput = localStorage.getItem(currentHour)
+
+        if(currentInput !== null) {
+            $(this).siblings(".input").val(currentInput);
+        }
+    });
+}
+
+
+// ======================= DELETING SAVED PLANNER ============================
+
+
 
 // ========================= CALL FUNCTIONS ==================================
 colorChange();
+savePlanner();
