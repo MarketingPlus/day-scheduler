@@ -86,3 +86,9 @@ $(".time-block").each(function() {
 [REPOSITARY](https://github.com/MarketingPlus/day-scheduler/)
 
 [WEBSITE](https://marketingplus.github.io/day-scheduler/)
+
+## License
+
+  Copyright (c) Benjamin Wilson. All rights reserved.
+  
+  Licensed under the [MIT](LICENSE) license.
